@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+</head>
+<body>
+    <div  >
+        <ul class="menu" >
+            <li><a href="#">Trang chủ</a></li>
+            <li class="gthieu"><a href="#">Giới thiệu</a>
+                <ul class="gioithieu">
+                    <Li ><a href="#">Bản thân</a></Li>
+                    <Li ><a href="#">Trường học</a></Li>
+                    <Li ><a href="#">Ngành nghề </a></Li>
+                </ul>
+            </li>
+            <li><a href="#">Sản phẩm</a></li>
+            <li><a href="#">Hỏi đáp</a></li>
+            <li><a href="#">Liên hệ</a></li>
+        </ul>
+    </div>
+    <style>
+       
+    ul.menu  li a{
+        color: white;
+        text-decoration: none;
+        width: 100px;
+
+        }
+  .menu  li:hover {
+            font-weight:bold;
+            color: azure;
+            background-color:gray;
+        }
+    .gioithieu   li:hover {
+            color: rgb(15, 8, 111);
+            background-color: rgb(183, 149, 149);
+        }
+        ul.gioithieu {
+            position: absolute;
+            padding: 0;
+            background-color: rgb(58, 43, 45);
+            list-style: none;
+            top: 42px;
+            width: 170px;
+            display: none;
+        }
+        .gioithieu li{
+            color: white;
+            border-bottom: 1px solid white;
+            text-align: left;
+        }
+        ul.menu {
+            
+            justify-content: center;
+            background-color: rgb(127, 168, 255);
+            margin: 0px;
+            list-style: none;
+            display: flex;
+            gap: 30px;
+        }
+        .menu li{
+            position: relative;
+            padding:12px 20px;
+        }
+        .menu li:hover ul.gioithieu {
+            display: block;
+        }
+    body{
+        margin: 0;
+        -webkit-user-select: none;
+            user-select: none;
+            
+    }
+    </style>
+</body>
+</html>

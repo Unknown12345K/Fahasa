@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <img src="" alt="">
+        <img src="" alt="">
+        <img src="" alt="">
+    </div>
+    <hr>
+    <h1 style="justify-content: center;display: flex;">PHIẾU ĐĂNG KÝ</h1>
+    <form action="">
+        <div class="hoten">
+            <label for="">Họ và tên: </label>
+            <input type="text" maxlength="500px">
+        </div>
+        <div class="diachi">
+            <label for="">Địa chỉ: </label>
+            <input type="text" maxlength="1000px">
+        </div>
+        <div class="email">
+            <label for="">Email: </label>
+            <input type="text" maxlength="500px">
+        </div>
+        <div class="gioitinh">
+            <label for="">Giới tính: </label>
+            <div style="display: flex; flex: 2;justify-content: end;">
+                <input type="radio" name="nu">
+            <label for="">Nam</label>
+            </div>
+            <div style="display: flex; flex: 2;justify-content: end;"  >
+                <input type="radio" name="nu">
+            <label for="">Nữ</label>
+            </div>
+        </div>
+        <div class="tuoi">
+            <label for="">Tuổi: </label>
+            <input type="text" maxlength="500px">
+        </div>
+        <div class="sothich">
+            <div>
+                <label for="">Sở thích: </label>
+            </div>
+            <div class="chon">
+                <div class="thethao">
+                    <input type="checkbox">
+                    <label for="">Thể thao</label>
+                </div>
+                <div class="vanhoc">
+                    <input type="checkbox">
+                    <label for="">Văn học</label>
+                </div>
+                <div class="cntt">
+                    <input type="checkbox">
+                    <label for="">Công nghệ thông tin</label>
+                </div>
+                <div class="lichsu">
+                    <input type="checkbox">
+                    <label for="">Lịch sử</label>
+                </div>
+                <div class="game">
+                    <input type="checkbox">
+                    <label for="">Game</label>
+                </div>   
+            </div>
+            
+        </div>
+        <div class="chuyennganh">
+            <label for="">Chuyên ngành: </label>
+            <input type="text" maxlength="500px">
+        </div>
+        <div class="guihinh">
+            <label for="">Gởi hình: </label>
+            <input type="text" placeholder="gửi hình">
+            <button>Browse</button>
+        </div>
+        <div class="yeucau">
+            <label for="">Yêu cầu:</label>
+            <textarea name="yeucau" id="yeucau" cols="50" rows="10"></textarea>
+        </div>
+        <div class="buttonguinhap">
+            <button>Gửi thông tin</button>
+            <button>Nhập lại </button>
+        </div>
+    </form>
+    <style>
+        .hoten{
+            display: flex;
+            justify-content: center;
+        }
+        .hoten>input{
+            flex: 2;
+        }
+        .hoten>label{
+            flex: 1;
+            text-align: end;
+        }
+        .diachi{
+            display: flex;
+            justify-content:  center;
+        }
+        .diachi>input{
+            flex: 2;
+        }
+        .diachi>label{
+            flex: 1;
+            text-align: end;
+        }
+        .email{
+            display: flex;
+            justify-content:  center;
+        }
+        .email>input{
+            flex: 2;
+        }
+        .email>label{
+            flex: 1;
+            text-align: end;
+        }
+        .gioitinh{
+            display: flex;
+            justify-content: center;
+        }
+        .gioitinh>label{
+           flex: 2;
+           text-align: end;
+        }
+        .tuoi{
+            margin-left: 348px;
+        }
+        .sothich{
+            margin-left: 328px;
+            display: flex;
+        }
+        .chuyennganh{
+            margin-left: 228px;
+        }
+    </style>
+</body>
+</html>

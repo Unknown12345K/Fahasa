@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MenuDoc</title>
+</head>
+<body>
+    <div  >
+        <ul class="menu" >
+            <li><a href="#">Trang chủ</a></li>
+            <li><a href="#">Tin tức</a>
+                <ul class="sub-menu">
+                <li><a href="#">WordPress</a></li>
+                <li><a href="#">SEO</a></li>
+                <li><a href="#">Hosting</a></li>
+                </ul></li>
+            <li><a href="#">Sản phẩm</a></li>
+            <li><a href="#">Hỏi đáp</a></li>
+            <li><a href="#">Liên hệ</a></li>
+        </ul>
+    </div>
+    <style>
+        .menu li a{
+            text-decoration: none;
+            padding-left: 50px;
+            font-weight: bold;
+            display: block;
+        }
+        
+         .menu li{
+            width: auto;
+            height: 50px;
+            line-height: 50px;
+            border-bottom: 1px solid #331515;
+            padding: 0 0;
+            background-color: aqua;
+         }
+         .menu li:hover {
+            background-color: #331515;
+         }
+         .menu li:hover .sub-menu{
+            display: block;
+            background-color: aquamarine;
+         }
+         .menu li:hover a{
+            color: rgb(26, 202, 143);
+         }
+        .menu { 
+            position: relative;
+            padding: 0;
+            width: 250px;
+            list-style: none;
+            background-color: aqua;
+            text-align: left;
+            margin-left: 0;
+            margin-top: 0;
+        }
+        .sub-menu li a {
+            text-decoration: none;
+        }
+
+        .sub-menu{
+            position: absolute;
+            list-style: none;
+           margin: 0 250px;
+           padding: 0;
+           display: none;
+           top: 50px;
+           width: 170px;
+           background-color: aquamarine;
+           
+        }
+        body{
+            margin: 0 0;
+        }
+    </style>
+</body>
+</html>
