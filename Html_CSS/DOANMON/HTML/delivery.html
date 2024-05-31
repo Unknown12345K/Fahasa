@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/b8d12a5188.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <title>FAHASA</title>
+</head>
+<body>
+    <!------------------------Menu--------------------------------->
+    <header>
+        <div class="logo">
+            <a href="/index.html"><img src="../IMAGE/fahasa-logo.png" alt=""></a>
+        </div>
+        <div class="menu">
+            <li><a href="">Đồ Chơi</a>
+                <ul class="sub-menu">
+                    <li><a href="../HTML/danhmuc.html">
+                        ĐỒ CHƠI NỔI BẬT
+                    </a></li>
+                    <li><a href="">PHƯƠNG TIỆN CÁC LOẠI</a></li>
+                    <li><a href="">MÔ HÌNH</a>
+                    </li>
+                    <li><a href="">ROBOT-SIÊU NHÂN</a>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="">Văn học</a></li>
+            <li><a href="">Sách</a></li>
+            <li><a href="">Manga</a></li>
+            <li><a href="">Văn phòng phẩm nổi bật</a></li>
+            <li><a href="">Sale</a></li>
+        </div>
+         <div class="other">
+            <li><input placeholder="Tìm kiếm" type="text"><i class="fa-solid fa-magnifying-glass"></i></li>
+            <li><a href="" class="fa fa-paw"></a></li>
+            <li><a href="" class="fa fa-user"></a></li>
+            <li><a href="../HTML/cart.html" class="fa fa-shopping-bag"></a></li>
+         </div>
+    </header>
+<!------------------------Delivery--------------------------------->
+<section class="delivery">
+    <div class="container">
+        <div class="delivery-top flex">
+        <p><img src="../IMAGE/ico_warning_white.svg" alt=""></p>
+        <p>Bạn đã là thành viên?</p>
+        <p><a href="#" style="text-decoration: underline; color:#F39801;">Đăng nhập ngay</a></p>
+        </div>
+        <div class="delivery-diachi container-gioithieu-fahasha">
+            ĐỊA CHỈ GIAO HÀNG
+        </div>
+        <hr>
+        <div class="delivery-content-main">
+            <div class="delivery-main">
+                <label for="">Họ và tên người nhận</label>
+                <input type="text" placeholder="Nhập họ tên người nhận">
+            </div>
+            <div class="delivery-main">
+                <label for="">Email</label>
+                <input type="text" placeholder="Nhập email">
+            </div>
+            <div class="delivery-main">
+                <label for="">Số điện thoại</label>
+                <input type="text" placeholder="Ví dụ: 0979123xxx (10 ký tự số)">
+            </div>
+            <div class="delivery-main">
+                <label for="">Quốc gia</label>
+                <select name="" id="">
+                    <option value="" data-select2-id="15"> </option>
+                    <option value="AU" data-select2-id="16">Australia</option>
+                    <option value="BR" data-select2-id="17">Brazil</option>
+                    <option value="CA" data-select2-id="18">Canada</option>
+                    <option value="CU" data-select2-id="19">Cuba</option>
+                    <option value="DK" data-select2-id="20">Denmark</option>
+                    <option value="FI" data-select2-id="21">Finland</option>
+                    <option value="FR" data-select2-id="22">France</option>
+                    <option value="DE" data-select2-id="23">Germany</option>
+                    <option value="HK" data-select2-id="24">Hong Kong SAR China</option>
+                    <option value="HU" data-select2-id="25">Hungary</option>
+                    <option value="ID" data-select2-id="26">Indonesia</option>
+                    <option value="IT" data-select2-id="27">Italy</option>
+                    <option value="JP" data-select2-id="28">Japan</option>
+                    <option value="MY" data-select2-id="29">Malaysia</option>
+                    <option value="NL" data-select2-id="30">Netherlands</option>
+                    <option value="NZ" data-select2-id="31">New Zealand</option>
+                    <option value="PH" data-select2-id="32">Philippines</option>
+                    <option value="PL" data-select2-id="33">Poland</option>
+                    <option value="RU" data-select2-id="34">Russia</option>
+                    <option value="SG" data-select2-id="35">Singapore</option>
+                    <option value="KR" data-select2-id="36">South Korea</option>
+                    <option value="ES" data-select2-id="37">Spain</option>
+                    <option value="SE" data-select2-id="38">Sweden</option>
+                    <option value="CH" data-select2-id="39">Switzerland</option>
+                    <option value="TW" data-select2-id="40">Taiwan</option>
+                    <option value="VN" selected="selected" data-select2-id="2">Việt Nam</option>
+                </select>
+            </div>
+            <div class="delivery-main">
+                <label for="">Tỉnh/Thành Phố</label>
+                <select name="" id="">
+                    <option value="" selected="" data-select2-id="9">Chọn tỉnh/thành Phố</option>
+                    <option value="485" data-select2-id="45">Hồ Chí Minh</option>
+                    <option value="486" data-select2-id="46">Hải Phòng</option>
+                    <option value="487" data-select2-id="47">Hà Nội</option>
+                    <option value="488" data-select2-id="48">Đà Nẵng</option>
+                    <option value="489" data-select2-id="49">Hưng Yên</option>
+                </select>
+            </div>
+            <div class="delivery-main">
+                <label for="">Quận/Huyện</label>
+                <select name="" id="">
+                    <option value="" selected="" data-select2-id="9">Quận/Huyện</option>
+                    <option value="485" data-select2-id="45">Hồ Chí Minh</option>
+                    <option value="486" data-select2-id="46">Hải Phòng</option>
+                    <option value="487" data-select2-id="47">Hà Nội</option>
+                    <option value="488" data-select2-id="48">Đà Nẵng</option>
+                    <option value="489" data-select2-id="49">Hưng Yên</option>
+                </select>
+            </div>
+            <div class="delivery-main">
+                <label for="">Phường/Xã</label>
+                <select name="" id="">
+                    <option value="" selected="" data-select2-id="9">Phường/Xã</option>
+                    <option value="485" data-select2-id="45">Hồ Chí Minh</option>
+                    <option value="486" data-select2-id="46">Hải Phòng</option>
+                    <option value="487" data-select2-id="47">Hà Nội</option>
+                    <option value="488" data-select2-id="48">Đà Nẵng</option>
+                    <option value="489" data-select2-id="49">Hưng Yên</option>
+                </select>
+            </div>
+            <div class="delivery-main">
+                <label for="">Địa chỉ nhận hàng</label>
+                <input type="text" placeholder="Nhập địa chỉ nhận hàng">
+            </div>
+        </div>
+        <div class="delivery-vanchuyen container-gioithieu-fahasha">
+            PHƯƠNG THỨC VẬN CHUYỂN
+        </div>
+        <hr>
+        <div class="delivery-phuongthucvc-content">
+            <label for="" id="phuongthucvc">
+                <div class="phuongthucvc-i"> <i style="color:#C92127 ; font-size: large;" class="fa-regular fa-circle-dot"></i></div>
+                <div>
+                    <div>Giao hàng tiêu chuẩn:32000 đ</div>
+                    <div>Thứ Hai-03/06</div>
+                </div>
+            </label>
+        </div>
+        <div class="delivery-vanchuyen container-gioithieu-fahasha">
+            PHƯƠNG THỨC THANH TOÁN
+        </div>
+        <hr>
+        <div class="delivery-thanhtoan">
+            <div>
+                <label id="delivery-thanhtoan" for="" >
+                    <div class="phuongthuctt-i"> <i style="color:#C92127 ; font-size: large;" class="fa-regular fa-circle-dot"></i></div>
+                    <input type="radio" name="radio-thanhtoan" id="">
+                    <div><img src="../IMAGE/ico_zalopayapp.svg"  alt=""></div>
+                    <div>
+                        Ví ZaloPay
+                    </div>
+                </label>
+            </div>
+            <div></div>
+        </div>
+        <div class="delivery-thanhtoan">
+            <div>
+                <label id="delivery-thanhtoan" for="" >
+                    <div class="phuongthuctt-i"> <i style="color:#C92127 ; font-size: large;" class="fa-regular fa-circle-dot"></i></div>
+                    <input type="radio" name="radio-thanhtoan" id="">
+                    <div><img src="../IMAGE/ico_vnpay.svg"  alt=""></div>
+                    <div>
+                        VNPAY
+                    </div>
+                </label>
+            </div>
+            <div></div>
+        </div>
+        <div class="delivery-thanhtoan">
+            <div>
+                <label id="delivery-thanhtoan" for="" >
+                    <div class="phuongthuctt-i"> <i style="color:#C92127 ; font-size: large;" class="fa-regular fa-circle-dot"></i></div>
+                    <input type="radio" name="radio-thanhtoan" id="">
+                    <div><img src="../IMAGE/ico_airpay.svg"  alt=""></div>
+                    <div>
+                        Ví ShoppePay
+                    </div>
+                </label>
+            </div>
+            <div></div>
+        </div>
+        <div class="delivery-thanhtoan">
+            <div>
+                <label id="delivery-thanhtoan" for="" >
+                    <div class="phuongthuctt-i"> <i style="color:#C92127 ; font-size: large;" class="fa-regular fa-circle-dot"></i></div>
+                    <input type="radio" name="radio-thanhtoan" id="">
+                    <div><img src="../IMAGE/ico_momopay.svg"  alt=""></div>
+                    <div>
+                        Ví Momo
+                    </div>
+                </label>
+            </div>
+            <div></div>
+        </div>
+        <div class="delivery-thanhtoan">
+            <div>
+                <label id="delivery-thanhtoan" for="" >
+                    <div class="phuongthuctt-i"> <i style="color:#C92127 ; font-size: large;" class="fa-regular fa-circle-dot"></i></div>
+                    <input type="radio" name="radio-thanhtoan" id="">
+                    <div><img src="../IMAGE/ico_zalopayatm.svg"  alt=""></div>
+                    <div>
+                        ATM / Iternet Banking
+                    </div>
+                </label>
+            </div>
+            <div></div>
+        </div>
+        <div class="delivery-thanhtoan">
+            <div>
+                <label id="delivery-thanhtoan" for="" >
+                    <div class="phuongthuctt-i"> <i style="color:#C92127 ; font-size: large;" class="fa-regular fa-circle-dot"></i></div>
+                    <input type="radio" name="radio-thanhtoan" id="">
+                    <div><img src="../IMAGE/ico_zalopaycc.svg"  alt=""></div>
+                    <div>
+                        Visa / Master / JCB 
+                    </div>
+                </label>
+            </div>
+            <div></div>
+        </div>
+        <div class="delivery-thanhtoan">
+            <div>
+                <label id="delivery-thanhtoan" for="" >
+                    <div class="phuongthuctt-i"> <i style="color:#C92127 ; font-size: large;" class="fa-regular fa-circle-dot"></i></div>
+                    <input type="radio" name="radio-thanhtoan" id="">
+                    <div><img src="../IMAGE/ico_cashondelivery.svg"  alt=""></div>
+                    <div>
+                        Thanh Toán Khi Nhận Hàng
+                    </div>
+                </label>
+            </div>
+            <div></div>
+        </div>
+        <div class="delivery-thongtin-more container-gioithieu-fahasha">
+            THÔNG TIN KHÁC
+        </div>
+        <hr>
+        <div class="delivery-tt-m">
+            <input type="checkbox">
+            <label for="">Ghi chú</label>
+        </div>
+        <div class="delivery-tt-m">
+            <input type="checkbox">
+            <label for="">Xuất hóa đơn</label>
+            <a href="" style="text-decoration: underline; color:#007bff;">Chi tiết</a>
+            <p style="color: #C92127;">*Từ ngày 01/11/2020, Công ty Fahasa không giải quyết việc xuất lại hóa đơn cho các trường hợp Quý khách không đăng ký thông tin</p>
+        </div>
+        <div class="delivery-kiemtra container-gioithieu-fahasha">
+            KIỂM TRA LẠI ĐƠN HÀNG
+        </div>
+        <div class="delivery-kiemtra-content">
+           <div class="delivery-kiemtra-item">
+            <div class="delivery-kiemtra-item-img">
+                <img src="https://cdn0.fahasa.com/media/catalog/product//7/c/7cq1640081325_3.jpg" alt="">
+            </div>
+            <div  class="delivery-kiemtra-item-text flex">
+                <div>Boardgame Lớp Học Mật Ngữ - Khu Rừng Kim Cương</div>
+                <div>
+                    <p>479.200 đ</p>
+                    <p style="text-decoration: line-through; font-size: 12px;">599.000 đ</p>
+                </div>
+                <div>1</div>
+                <div>
+                    <p  style="color:#F39801;">479.200 đ</p>
+                </div>
+            </div>
+           </div>
+        </div>
+        <div class="delivery-kiemtra-content">
+            <div class="delivery-kiemtra-item">
+             <div class="delivery-kiemtra-item-img">
+                 <img src="https://cdn0.fahasa.com/media/catalog/product//7/c/7cq1640081325_3.jpg" alt="">
+             </div>
+             <div  class="delivery-kiemtra-item-text flex">
+                 <div>Boardgame Lớp Học Mật Ngữ - Khu Rừng Kim Cương</div>
+                 <div>
+                     <p>479.200 đ</p>
+                     <p style="text-decoration: line-through; font-size: 12px;">599.000 đ</p>
+                 </div>
+                 <div>1</div>
+                 <div>
+                     <p  style="color:#F39801;">479.200 đ</p>
+                 </div>
+             </div>
+            </div>
+         </div>
+    </div>
+</section>
+<footer>
+    <section class="delivery-bottom">
+        <div class="delivery-container-bottom">
+            <div class="delivery-container-bottom-content-top" >
+                <div class="content-top-text">
+                    <div class="text-tt">Thành tiền</div>
+                    <div class="value-tt">526.400 đ</div>
+                </div>
+                <div class="content-top-text">
+                    <div class="text-tt">Phí vận chuyển (Giao hàng tiêu chuẩn)</div>
+                    <div class="value-tt">32.000 đ</div>
+                </div>
+                <div class="content-top-text">
+                    <div class="text-tt" style="font-weight: bold;">Tổng Số Tiền (gồm VAT)</div>
+                    <div class="value-tt" style="font-weight: bold; font-size: larger; color: #F39801;">558.400 đ</div>
+                </div>
+            </div>
+            <div class="delivery-container-bottom-content-bottom">
+                <div class="content-bottom-text">
+                    <img src="../IMAGE/icon_checked_red.svg" alt="">
+                    <label for="">
+                        <p>Bằng việc tiến hành mua hàng, Bạn đã đồng ý với</p>
+                        <p><a href="https://www.fahasa.com/dieu-khoan-fahasa" style="font-weight: bold;color: #007bff; transition: 0.3s all;">Điều khoản & Điều kiện của Fahasa.com</a></p>
+                    </label>
+                </div>
+                <div class="content-bottom-button">
+                        <button id="bt-thanhtoan" type="button">THANH TOÁN</button>
+                </div>
+            </div>
+        </div>
+    </section>
+</footer>
+<!------------------------App-container--------------------------------->
+<section class="App-container">
+    <p>Tải ứng dụng Fahasa</p>
+    <div class="app-download">
+        <a href="https://play.google.com/store/apps/details?id=com.fahasa.android.fahasa"><img src="../IMAGE/googleplay.png"></a>
+        <a href="https://apps.apple.com/us/app/fahasa-th%E1%BA%BF-gi%E1%BB%9Bi-trong-t%E1%BA%A7m-tay/id1227597830"><img src="../IMAGE/appstore.png"></a>
+    </div>
+    <p>Nhận thông tin các chương trình của Fahasa.com</p>
+    <input type="text" name="email" id="email" placeholder="Nhập địa chỉ Email">
+</section>
+<!------------------------footer--------------------------------->
+<div class="footer-top">
+    <li><a href=""><img src="../IMAGE/img-congthuong.png" alt=""></a></li>
+    <li><a href="">Liên hệ</a></li>
+    <li><a href="">Tuyển dụng</a></li>
+    <li><a href="">Giới thiệu</a></li>
+    <li>
+        <a href="" class="fa fa-facebook-f"></a>
+        <a href="" class="fa fa-instagram"></a>
+        <a href="" class="fa fa-youtube"></a>
+    </li>
+</div>
+<div class="footer-top">
+    <p>
+        Fahasa.com nhận đặt hàng trực tuyến và giao hàng tận nơi. KHÔNG hỗ trợ đặt mua và nhận hàng trực tiếp tại văn phòng cũng như tất cả Hệ Thống Fahasa trên toàn quốc. <br> <br>
+    
+        Lầu 5, 387-389 Hai Bà Trưng Quận 3 TP HCMCông Ty Cổ Phần Phát Hành Sách TP HCM - FAHASA60 - 62 Lê Lợi, Quận 1, TP. HCM, Việt Nam <br> <br>
+
+        Số điện thoại: <span>0243 205 2222/ 090 589 8683</span>
+    </p>
+</div>
+<div class="footer-top">
+   <img src="../IMAGE/fahasa-logo.png" alt="">
+</div>
+</body>
+<script src="../JAVAS/java.js"></script>
+</html>

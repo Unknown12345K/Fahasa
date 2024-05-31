@@ -1,0 +1,7 @@
+<svg id="Check_Checkbox" data-name="Check/Checkbox" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+  <rect id="Checkbox" width="20" height="20" rx="4" fill="#c92127"/>
+  <g id="check" transform="translate(2 2)">
+    <path id="Path_14127" data-name="Path 14127" d="M0,0H16V16H0Z" fill="none"/>
+    <path id="Path_14128" data-name="Path 14128" d="M5,10.333l3.333,3.333L15,7" transform="translate(-1.667 -2.333)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+  </g>
+</svg>

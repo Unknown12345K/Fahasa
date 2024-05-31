@@ -6,32 +6,26 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://kit.fontawesome.com/b8d12a5188.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../CSS/style.css">
-    <title>Document</title>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>FAHASA</title>
 </head>
 <body>
     <!------------------------Menu--------------------------------->
     <header>
         <div class="logo">
-            <img src="../IMAGE/fahasa-logo.png" alt="">
+            <a href="/index.html"><img src="../IMAGE/fahasa-logo.png" alt=""></a>
         </div>
         <div class="menu">
             <li><a href="">Đồ Chơi</a>
                 <ul class="sub-menu">
-                    <li><a href="">Hàng mới về</a></li>
-                    <li><a href="">Collection</a></li>
-                    <li><a href="">Áo</a>
-                        <ul>
-                            <li><a href="">Áo sơ mi</a></li>
-                            <li><a href="">Áo khoác</a></li>
-                            <li><a href="">Áo len</a></li>
-                        </ul>
+                    <li><a href="../HTML/danhmuc.html">
+                        ĐỒ CHƠI NỔI BẬT
+                    </a></li>
+                    <li><a href="">PHƯƠNG TIỆN CÁC LOẠI</a></li>
+                    <li><a href="">MÔ HÌNH</a>
                     </li>
-                    <li><a href="">Quần</a>
-                        <ul>
-                            <li><a href="">Quần Jean</a></li>
-                            <li><a href="">Quần short</a></li>
-                            <li><a href="">Quần dài</a></li>
-                        </ul>
+                    <li><a href="">ROBOT-SIÊU NHÂN</a>
                     </li>
                 </ul>
             </li>
@@ -45,11 +39,11 @@
             <li><input placeholder="Tìm kiếm" type="text"><i class="fa-solid fa-magnifying-glass"></i></li>
             <li><a href="" class="fa fa-paw"></a></li>
             <li><a href="" class="fa fa-user"></a></li>
-            <li><a href="" class="fa fa-shopping-bag"></a></li>
+            <li><a href="../HTML/cart.html" class="fa fa-shopping-bag"></a></li>
          </div>
     </header>
     <!------------------------danhmuc--------------------------------->
-    <section class="danhmuc">
+    <section id="danhmuc">
         <div class="danhmuccon">
             <div class="danhmuc-top flex">
                 <p>Trang chủ</p> <span>&#8594;</span><p>Đồ chơi</p><span>&#8594;</span><p>Hàng mới về</p>
@@ -59,7 +53,7 @@
             <div class="flex">
                 <div class="danhmuc-left">
                     <ul>
-                        <li class="danhmuc-left-li"><a href="#">Đồ Chơi</a>
+                        <li class="danhmuc-left-li "><a href="#">Đồ Chơi</a>
                             <ul>
                                 <li><a href="">ĐỒ CHƠI NỔI BẬT</a></li>
                                 <li><a href="">PHƯƠNG TIỆN CÁC LOẠI</a></li>
@@ -80,29 +74,119 @@
                         <li class="danhmuc-left-li"><a href="#">Văn phòng phẩm nổi bật</a></li>
                     </ul>
                 </div>
-                <div class="danhmuc-right flex">
-                    <div class="danhmuc-right-itemtop">
-                        <p>Sắp xếp theo:</p>
+                <div class="danhmuc-right ">
+                    <div class="danhmuc-right-top flex">
+                        <div class="danhmuc-right-itemtop">
+                            <p>Sắp xếp theo:</p>
+                        </div>
+                        <div class="danhmuc-right-itemtop">
+                            <select name="" id="">
+                                <option value="">Bán Chạy Tuần</option>
+                                <option value="">Bán Chạy Tháng</option>
+                                <option value="">Bán Chạy Năm</option>
+                                <option value="">Nổi Bật Tuần</option>
+                                <option value="">Nổi Bật Tháng</option>
+                                <option value="">Nổi Bật Năm</option>
+                                <option value="">Chiết Khấu</option>
+                                <option value="">Giá Bán</option>
+                                <option value="">Mới Nhất</option>
+                            </select>
+                        </div>
+                        <div class="danhmuc-right-itemtop">
+                            <select name="" id="">
+                                <option value="">12 sản phẩm</option>
+                                <option value="">24 sản phẩm</option>
+                                <option value="">48 sản phẩm</option>
+                            </select>
+                        </div>
                     </div>
-                    <div class="danhmuc-right-itemtop">
-                        <select name="" id="">
-                            <option value="">Bán Chạy Tuần</option>
-                            <option value="">Bán Chạy Tháng</option>
-                            <option value="">Bán Chạy Năm</option>
-                            <option value="">Nổi Bật Tuần</option>
-                            <option value="">Nổi Bật Tháng</option>
-                            <option value="">Nổi Bật Năm</option>
-                            <option value="">Chiết Khấu</option>
-                            <option value="">Giá Bán</option>
-                            <option value="">Mới Nhất</option>
-                        </select>
+                    <div class="danhmuc-right-item flex">
+                        <div class="row-item" id="prd00">
+                            <a href="../HTML/product00.html">
+                                <img src="https://cdn0.fahasa.com/media/catalog/product/e/b/eb7f9af9bc5cb8e852f206448b13d556.jpg">
+                                <h1>Lớp học Mật Ngữ: Cuộc đua sao chổi</h1>
+                            </a>
+                           <p style="display: flex; justify-content:space-evenly">
+                            <span>459.000<sup>Đ</sup> </span>
+                            <span id="danhmuc-cart" style="padding: 8px; cursor: pointer; color: #c00; font-size: large; font-weight: 700;"><i class='bx bx-cart-alt'></i></span>
+                        </p>      
+                        </div>
+                        <div class="row-item" id="prd01">
+                             <a href="../HTML/product01.html">
+                                <img src="https://cdn0.fahasa.com/media/catalog/product/8/9/8936130670702.jpg">
+                                <h1>Lớp Học Mật Ngữ - Siêu Thú Ngân Hà</h1>
+                             </a>
+                            <p style="display: flex; justify-content:space-evenly">
+                                <span>699.000<sup>Đ</sup> </span>
+                                <span id="danhmuc-cart" style="padding: 8px; cursor: pointer; color: #c00; font-size: large; font-weight: 700;"><i class='bx bx-cart-alt'></i></span>
+                            </p>      
+                         </div>
+                         <div class="row-item" id="prd02">
+                            <a href="../HTML/product02.html">
+                                <img src="https://cdn0.fahasa.com/media/catalog/product/7/c/7cq1640081325_3.jpg">
+                                <h1>Boardgame Lớp Học Mật Ngữ - Khu Rừng Kim Cương</h1>
+                            </a>
+                            <p style="display: flex; justify-content:space-evenly">
+                                <span>479.200<sup>Đ</sup> </span>
+                                <span id="danhmuc-cart" style="padding: 8px; cursor: pointer; color: #c00; font-size: large; font-weight: 700;"><i class='bx bx-cart-alt'></i></span>
+                            </p>      
+                         </div>
+                         <div class="row-item" id="prd03">
+                            
+                            <a href="../HTML/product03.html">
+                                <img src="https://cdn0.fahasa.com/media/catalog/product/8/9/8936130671556.jpg">
+                                <h1>Boardgame Ting Ting Doraemon</h1>
+                            </a>
+                            <p style="display: flex; justify-content:space-evenly">
+                                <span>300.000<sup>Đ</sup> </span>
+                                <span id="danhmuc-cart" style="padding: 8px; cursor: pointer; color: #c00; font-size: large; font-weight: 700;"><i class='bx bx-cart-alt'></i></span>
+                            </p>      
+                         </div>
+                         <div class="row-item" id="prd04">
+                            <a href="../HTML/product04.html">
+                                <img src="https://cdn0.fahasa.com/media/catalog/product/8/9/8936121470816-_5__1.jpg">
+                                <h1>Boardgame Mèo Mốc Style Up! - The Photo Taking Game - Play Plus</h1>
+                            </a>
+                            <p style="display: flex; justify-content:space-evenly">
+                                <span>169.150<sup>Đ</sup> </span>
+                                <span id="danhmuc-cart" style="padding: 8px; cursor: pointer; color: #c00; font-size: large; font-weight: 700;"><i class='bx bx-cart-alt'></i></span>
+                            </p>      
+                         </div>
+                         <div class="row-item" id="prd05">
+                            <a href="../HTML/product05.html">
+                                <img src="https://cdn0.fahasa.com/media/catalog/product/8/9/8936121470175_1.jpg">
+                                <h1>Thẻ Bài Ma Sói Character Việt Hóa</h1>
+                            </a>
+                            <p style="display: flex; justify-content:space-evenly">
+                                <span>112.000<sup>Đ</sup> </span>
+                                <span id="danhmuc-cart" style="padding: 8px; cursor: pointer; color: #c00; font-size: large; font-weight: 700;"><i class='bx bx-cart-alt'></i></span>
+                            </p>      
+                         </div>
+                         <div class="row-item" id="prd06">
+                            <a href="../HTML/product06.html">
+                                <img src="https://cdn0.fahasa.com/media/catalog/product/7/7/77e3eeaa6424151057b58254bcba52ca.jpg">
+                                <h1>Đồ Chơi Cờ Trí Tuệ UNO W2085</h1>
+                            </a>
+                            <p style="display: flex; justify-content:space-evenly">
+                                <span>126.750<sup>Đ</sup> </span>
+                                <span id="danhmuc-cart" style="padding: 8px; cursor: pointer; color: #c00; font-size: large; font-weight: 700;"><i class='bx bx-cart-alt'></i></span>
+                            </p>   
+                         </div>
+                         <div class="row-item" id="prd07">
+                            <a href="../HTML/product07.html">
+                                <img src="https://cdn0.fahasa.com/media/catalog/product/8/9/8936130671174.jpg">
+                                <h1>Boardgame Lớp Học Mật Ngữ - Ú Òa - Ai Vậy Ta? - Board Game VN</h1>
+                            </a>
+                            <p style="display: flex; justify-content:space-evenly">
+                                <span>220.000<sup>Đ</sup> </span>
+                                <span id="danhmuc-cart" style="padding: 8px; cursor: pointer; color: #c00; font-size: large; font-weight: 700;"><i class='bx bx-cart-alt'></i></span>
+                            </p>      
+                         </div>
                     </div>
-                    <div class="danhmuc-right-itemtop">
-                        <select name="" id="">
-                            <option value="">12 sản phẩm</option>
-                            <option value="">24 sản phẩm</option>
-                            <option value="">48 sản phẩm</option>
-                        </select>
+                    <div class="danhmuc-right-bottom flex ">
+                        <div class="danhmuc-right-itembottom">
+                            <p><span>&#8249;</span>1 2 3 4 5<span>&#8250;</span></p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -110,12 +194,12 @@
     </section>
     <!------------------------App-container--------------------------------->
     <section class="App-container">
-        <p>Tải ứng dụng IVY moda</p>
+        <p>Tải ứng dụng Fahasa</p>
         <div class="app-download">
             <a href="https://play.google.com/store/apps/details?id=com.fahasa.android.fahasa"><img src="../IMAGE/googleplay.png"></a>
             <a href="https://apps.apple.com/us/app/fahasa-th%E1%BA%BF-gi%E1%BB%9Bi-trong-t%E1%BA%A7m-tay/id1227597830"><img src="../IMAGE/appstore.png"></a>
         </div>
-        <p>Nhận thông tin các chương trình của IVY moda</p>
+        <p>Nhận thông tin các chương trình của Fahasa.com</p>
         <input type="text" name="email" id="email" placeholder="Nhập địa chỉ Email">
     </section>
     <!------------------------footer--------------------------------->
@@ -132,9 +216,9 @@
     </div>
     <div class="footer-top">
         <p>
-            Công ty Cổ phần Dự Kim với số đăng ký kinh doanh: <span>0105777650</span> <br>
+            Fahasa.com nhận đặt hàng trực tuyến và giao hàng tận nơi. KHÔNG hỗ trợ đặt mua và nhận hàng trực tiếp tại văn phòng cũng như tất cả Hệ Thống Fahasa trên toàn quốc. <br> <br>
     
-            Địa chỉ đăng ký: <span>Tổ dân phố Tháp, P.Đại Mỗ, Q.Nam Từ Liêm, TP.Hà Nội, Việt Nam</span> <br>
+            Lầu 5, 387-389 Hai Bà Trưng Quận 3 TP HCMCông Ty Cổ Phần Phát Hành Sách TP HCM - FAHASA60 - 62 Lê Lợi, Quận 1, TP. HCM, Việt Nam <br> <br>
     
             Số điện thoại: <span>0243 205 2222/ 090 589 8683</span>
         </p>
@@ -143,4 +227,6 @@
        <img src="../IMAGE/fahasa-logo.png" alt="">
     </div>
 </body>
+<script src="../JAVAS/java.js"></script>
+<script src="../JAVAS/danhmuc.js" ></script>
 </html>

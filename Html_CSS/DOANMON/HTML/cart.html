@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/b8d12a5188.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <title>FAHASA</title>
+</head>
+<body>
+    <!------------------------Menu--------------------------------->
+    <header>
+        <div class="logo">
+            <a href="/index.html"><img src="../IMAGE/fahasa-logo.png" alt=""></a>
+        </div>
+        <div class="menu">
+            <li><a href="">Đồ Chơi</a>
+                <ul class="sub-menu">
+                    <li><a href="../HTML/danhmuc.html">
+                        ĐỒ CHƠI NỔI BẬT
+                    </a></li>
+                    <li><a href="">PHƯƠNG TIỆN CÁC LOẠI</a></li>
+                    <li><a href="">MÔ HÌNH</a>
+                    </li>
+                    <li><a href="">ROBOT-SIÊU NHÂN</a>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="">Văn học</a></li>
+            <li><a href="">Sách</a></li>
+            <li><a href="">Manga</a></li>
+            <li><a href="">Văn phòng phẩm nổi bật</a></li>
+            <li><a href="">Sale</a></li>
+        </div>
+         <div class="other">
+            <li><input placeholder="Tìm kiếm" type="text"><i class="fa-solid fa-magnifying-glass"></i></li>
+            <li><a href="" class="fa fa-paw"></a></li>
+            <li><a href="" class="fa fa-user"></a></li>
+            <li><a href="../HTML/cart.html" class="fa fa-shopping-bag"></a></li>
+         </div>
+    </header>
+<!------------------------Cart--------------------------------->
+<section class="cart"  >
+    <div class="cart-container">
+        <div class="cart-top flex">
+            <h1>GIỎ HÀNG</h1>
+            <span>(0 sản phẩm)</span>
+        </div>
+        <div class="cart-content">
+            <div class="cart-content-left">
+                <table>
+                    <tr id="cart-header">
+                        <th><div><input type="checkbox" id="checkbox-all"></div></th>
+                        <th><div><span>Chọn tất cả (1 sản phẩm)</span></div></th>
+                        <th><div>Số lượng</div></th>
+                        <th><div>Thành tiền</div></th>
+                        <th></th>
+                    </tr>
+                    <tr id="cart-body">
+                       <td>
+                        <div><input type="checkbox" id="checkbox-id"></div>
+                       </td>
+                       <td>
+                        <div class="cart-product flex">
+                            <div class="product-cart-img"><img src="https://cdn0.fahasa.com/media/catalog/product//7/c/7cq1640081325_3.jpg" alt=""></div>
+                            <div class="cart-product-thongtin">
+                                <a href="#" style="font-size: larger;opacity: 0.8;">Boardgame Lớp Học Mật Ngữ - Khu Rừng Kim Cương</a>
+                                <p><span style="font-weight: bold;">479.200 đ</span><span style="text-decoration: line-through; font-size: 12px;">599.000 đ</span></p>
+                            </div>
+                        </div>
+                       </td>
+                       <td>
+                        <div class="cart-soluong  flex">
+                            <p style="cursor: pointer;">&#8722;</p>
+                            <p><input id="soluong" type="text" value="1"></p>
+                            <p style="cursor: pointer;">&#43;</p>
+                        </div>
+                       </td>
+                       <td>
+                        <div>
+                            <p id="thanhtien">479.200 đ</p>
+                        </div>
+                       </td>
+                       <td>
+                        <i id="trash" class="fa fa-trash-o"></i>
+                       </td>
+                    </tr>
+                    <tr id="cart-body">
+                        <td>
+                         <div><input type="checkbox" id="checkbox-id"></div>
+                        </td>
+                        <td>
+                         <div class="cart-product flex">
+                             <div class="product-cart-img"><img src="https://cdn0.fahasa.com/media/catalog/product//8/9/8936130671563.jpg" alt=""></div>
+                             <div class="cart-product-thongtin">
+                                 <a href="#" style="font-size: larger;opacity: 0.8;">Bộ Thẻ Sưu Tập Siêu Đặc Biệt: Card Collection - Lớp Học Mật Ngữ</a>
+                                 <p><span style="font-weight: bold;">47.200 đ</span><span style="text-decoration: line-through; font-size: 12px;">59.000 đ</span></p>
+                             </div>
+                         </div>
+                        </td>
+                        <td>
+                         <div class="cart-soluong  flex">
+                             <p style="cursor: pointer;">&#8722;</p>
+                             <p><input id="soluong" type="text" value="1"></p>
+                             <p style="cursor: pointer;">&#43;</p>
+                         </div>
+                        </td>
+                        <td>
+                         <div>
+                             <p id="thanhtien">47.200 đ</p>
+                         </div>
+                        </td>
+                        <td>
+                         <i id="trash" class="fa fa-trash-o"></i>
+                        </td>
+                     </tr>
+                </table>
+            </div>
+            <div class="cart-content-right">
+                <table>
+                    <tr>
+                        <th>Thành tiền</th>
+                        <td>554.800 đ</td>
+                    </tr>
+                    <tr>
+                        <th style="font-size: 16px;">Tổng Số Tiền (gồm VAT)</th>
+                        <td style="font-size: 28px; color: crimson; font-weight: 700;" >554.800 đ</td>
+                    </tr>
+                </table>
+                <div class="cart-content-right-button">
+                    <button  id="btright"><h1>THANH TOÁN</h1></button>
+                </div>
+                <div class="cart-content-right-text">
+                    <p><a  class="cart-text" href="#" style="color: red;">(Giảm giá trên web chỉ áp dụng cho bán lẻ)</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!------------------------App-container--------------------------------->
+<section class="App-container">
+    <p>Tải ứng dụng Fahasa</p>
+    <div class="app-download">
+        <a href="https://play.google.com/store/apps/details?id=com.fahasa.android.fahasa"><img src="../IMAGE/googleplay.png"></a>
+        <a href="https://apps.apple.com/us/app/fahasa-th%E1%BA%BF-gi%E1%BB%9Bi-trong-t%E1%BA%A7m-tay/id1227597830"><img src="../IMAGE/appstore.png"></a>
+    </div>
+    <p>Nhận thông tin các chương trình của Fahasa.com</p>
+    <input type="text" name="email" id="email" placeholder="Nhập địa chỉ Email">
+</section>
+<!------------------------footer--------------------------------->
+<div class="footer-top">
+    <li><a href=""><img src="../IMAGE/img-congthuong.png" alt=""></a></li>
+    <li><a href="">Liên hệ</a></li>
+    <li><a href="">Tuyển dụng</a></li>
+    <li><a href="">Giới thiệu</a></li>
+    <li>
+        <a href="" class="fa fa-facebook-f"></a>
+        <a href="" class="fa fa-instagram"></a>
+        <a href="" class="fa fa-youtube"></a>
+    </li>
+</div>
+<div class="footer-top">
+    <p>
+        Fahasa.com nhận đặt hàng trực tuyến và giao hàng tận nơi. KHÔNG hỗ trợ đặt mua và nhận hàng trực tiếp tại văn phòng cũng như tất cả Hệ Thống Fahasa trên toàn quốc. <br> <br>
+    
+        Lầu 5, 387-389 Hai Bà Trưng Quận 3 TP HCMCông Ty Cổ Phần Phát Hành Sách TP HCM - FAHASA60 - 62 Lê Lợi, Quận 1, TP. HCM, Việt Nam <br> <br>
+
+        Số điện thoại: <span>0243 205 2222/ 090 589 8683</span>
+    </p>
+</div>
+<div class="footer-top">
+   <img src="../IMAGE/fahasa-logo.png" alt="">
+</div>
+</body>
+<script src="../JAVAS/java.js"></script>
+</html>
