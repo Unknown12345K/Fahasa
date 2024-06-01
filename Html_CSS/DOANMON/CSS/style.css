@@ -3,7 +3,6 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-seriffff;
-    
 }
 li {
     list-style: none;
@@ -11,6 +10,9 @@ li {
 a {
     text-decoration: none;
     color: #000;
+}
+body::-webkit-scrollbar{
+    width: 1px;
 }
 header {
     display: flex;
@@ -29,6 +31,7 @@ header {
     display: flex;
     flex-wrap: wrap;
 }
+
 .scrollY{
     background: rgba(255, 255, 255, 1);
 }  
@@ -37,15 +40,14 @@ header:hover {
 }
 /*--------------menu------------ */
 .logo {
-    flex: 1;
+    flex: 1;    
 }
 .logo img {
-    height: 70px;
+    height: 70px ;
 }
 .menu {
     flex: 3;
-    display: flex;
-   
+    display: flex;   
 }
 .menu li {
     padding: 0 24px 0 24px;
@@ -53,18 +55,19 @@ header:hover {
 }
 .menu li:hover .sub-menu{
     visibility: visible ;
-    top: 44px;
-    
+    top: 44px;    
 }
 .sub-menu {
     position: absolute;
-    width: 150px;
-    border: 1px solid #ccc;
+    min-width: 260px;
+    min-height: 220px;
+    border: none;
     left: 4px;
     visibility: hidden;
     top: 50px;
     transition: 0.3s;
     z-index: 1;
+    box-shadow: 0 4px 6px rgb(32 33 36 / 28%);
     background-color:white !important ;
     cursor: pointer;
 }    
@@ -77,25 +80,99 @@ header:hover {
     font-size: 16px;
     font-weight: bold;
 }
+.sign-in:hover .sub-sign-in{
+    visibility: visible;
+    top: 19px;
+}
+.sub-sign-in button {
+    width: 100%;
+    margin: 4px 0;
+    text-align:center ;
+    padding: 20px ;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+#btsign-in {
+    color: #fff;
+    background-color: #C92127;
+    border: 2px solid #C92127;
+    font-size: 14px;
+    font-weight: 700;
+}
+#btsign-up {
+    color: #C92127 ;
+    background-color: #fff ;
+    border: 2px solid #C92127;
+    font-size: 14px;
+    font-weight: 800;
+}
+#btsign-in-fb {
+    color: #fff;
+    background-color: #1478FC;
+    border: 2px solid #1478FC;
+    font-size: 14px;
+    font-weight: 700;
+}
+.menu-cart:hover .sub-cart{
+    visibility: visible;
+    top: 19px;
+}
+.sub-cart {
+    transition: 0.3s;
+    cursor: default;
+    width: 260px;
+    min-width: 260px;
+    min-height: 220px;
+    font-weight: 600;
+}
+.sub-cart-bottom img {
+    width:80px ;
+    height:80px ;
+}
+.cart-center {
+    display: flex;
+    display: -webkit-flex;
+    align-items: center;
+    -webkit-align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    text-align: center;
+}
+.sub-sign-in,.sub-cart {
+    top: 20px;
+    left: -150px;
+    width: 260px;
+    margin-right: 20px;
+    visibility: hidden;
+    position: absolute;
+    transition: 0.3s;
+    box-shadow: 0 4px 6px rgb(32 33 36 / 28%);
+    color: #7A7E7F;
+    background-color:#fff;
+    padding: 10px !important;
+    border-radius: 8px;
+}
 .other {
     flex: 1;
     display: flex;
 }
 .other li {
     position: relative;
-    padding: 0 12px;
+    padding: 0 16px;
 }
 .other li::after {
+    width: 1px;
     content:"";
     display: block;
-    width: 1px;
-    height: 80%;
+    height: 90%;
     background: #101010;
     position: absolute;
     right: 0;
     top: 50%;
     transform: translateY(-50%);
 }
+
 .other li:last-child::after{
     display: none;
 }
@@ -112,6 +189,49 @@ header:hover {
 .other li:first-child i {
     position: absolute;
     right: 10px;
+}
+/* ---cart-modal----- */
+.cart-modal {
+    position: fixed;
+    top: 0;
+    height: 100%;
+    width: 100vw;
+    border: 1px solid #000;
+    background: rgba(0  , 0  , 0 , 0.6);
+    z-index: 3;
+    overflow: hidden !important;
+    /* visibility: hidden; */
+}
+.cart-modal-inner{
+    width: 70vw;
+    height: 65vh;
+    position: relative;
+    top: 20%;
+    margin: auto;
+    background: white;
+    border-radius: 8px ;
+    border: none;
+    overflow: hidden;
+}
+.cart-modal-head  {
+    display: flex;
+    height: 10vh;
+    align-items: center;
+    justify-content: space-between;
+    font-size: larger;
+    background: #C92127;
+    font-weight: 700;
+    color: white;
+}
+.cart-modal-head p {
+    padding: 0 20px;
+}
+.cart-modal-body {
+    text-align: center;
+    overflow-y: scroll;
+}
+.hidden {
+    display: none;
 }
 /*--------------silder------------ */
 .aspect-ratio-169 {

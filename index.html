@@ -6,13 +6,16 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://kit.fontawesome.com/b8d12a5188.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./Html_CSS/DOANMON/CSS/style.css">
+    <link rel="stylesheet" href="./Html_CSS/DOANMON/CSS/responsive.css">
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <title>Document</title>
 </head>
 <body>
     <!------------------------Menu--------------------------------->
     <header>
         <div class="logo">
-            <a href="./index.html"><img src="./Html_CSS/DOANMON/IMAGE/fahasa-logo.png" alt=""></a>
+            <a href="index.html"><img src="./Html_CSS/DOANMON/IMAGE/fahasa-logo.png" alt=""></a>
         </div>
         <div class="menu">
             <li><a href="">Đồ Chơi</a>
@@ -27,7 +30,18 @@
                     </li>
                 </ul>
             </li>
-            <li><a href="">Văn học</a></li>
+            <li><a href="">Văn học</a>
+                <ul class="sub-menu">
+                    <li><a href="./Html_CSS/DOANMON/HTML/danhmuc.html">
+                        TIỂU THUYẾT
+                    </a></li>
+                    <li><a href="">TRUYỆN NGẮN</a></li>
+                    <li><a href="">TÁC PHẨM KINH ĐIỂN</a>
+                    </li>
+                    <li><a href="">LIGHT NOVEL</a>
+                    </li>
+                </ul>
+            </li>
             <li><a href="">Sách</a></li>
             <li><a href="">Manga</a></li>
             <li><a href="">Văn phòng phẩm nổi bật</a></li>
@@ -36,10 +50,53 @@
          <div class="other">
             <li><input placeholder="Tìm kiếm" type="text"><i class="fa-solid fa-magnifying-glass"></i></li>
             <li><a href="" class="fa fa-paw"></a></li>
-            <li><a href="" class="fa fa-user"></a></li>
-            <li><a href="./Html_CSS/DOANMON/HTML/cart.html" class="fa fa-shopping-bag"></a></li>
+            <li class="sign-in"><a href="" class="fa fa-user"></a>
+                <div class="sub-sign-in">
+                   <div>
+                    <a href=""><button id="btsign-in" type="button">Đăng nhập</button></a>
+                   </div>
+                   <div>
+                    <a href=""><button id="btsign-up" type="button">Đăng ký</button></a>
+                   </div>
+                   <div>
+                    <a href=""><button id="btsign-in-fb" type="button">Đăng nhập bằng Facebook</button></a>
+                   </div>   
+                </div>
+            </li>
+            <li class="menu-cart"><a href="./Html_CSS/DOANMON/HTML/cart.html" class="fa fa-shopping-bag"></a>
+                <div class="sub-cart" style="left: -186px; cursor: pointer;">
+                    <div class="sub-cart-top flex">
+                        <i class='bx bx-cart-alt'></i>
+                        <p><span style="padding: 4px;">Giỏ hàng</span><span style="font-weight: 500;padding: 4px;">(0)</span></p>
+                    </div>
+                    <div class="sub-cart-bottom">
+                        <div class="cart-center" style="padding: 16px;">
+                            <img src="https://cdn0.fahasa.com/skin//frontend/ma_vanese/fahasa/images/checkout_cart/ico_emptycart.svg" alt="">
+                        </div>
+                        <div class="cart-center" style="padding: 0 0 24px">
+                            Chưa có sản phẩm nào
+                        </div>
+                    </div>
+                </div>
+            </li>
          </div>
     </header>
+    <div class="cart-modal hidden">
+        <div class="cart-modal-inner">
+            <div class="cart-modal-head flex">
+                <p>
+                    <span><i class='bx bx-cart-alt'></i></span>
+                    <span style="padding: 4px;">Giỏ hàng</span><span style="font-weight: 500;padding: 4px;">(0)</span>
+                </p>
+                <p class="cart-close" style="font-size: 32px; cursor: pointer;"><i class='bx bx-x'></i></p>
+            </div>
+            <div class="cart-modal-body">
+                <div class="cart-modal-center" style="padding: 16px; z-index: -1; margin: 80px 0;">
+                    <img  src="https://cdn0.fahasa.com/skin//frontend/ma_vanese/fahasa/images/checkout_cart/ico_emptycart.svg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
     <!------------------------Slider--------------------------------->
     <section id="Slider">
         <div class="aspect-ratio-169">
@@ -90,4 +147,5 @@
     </div>
 </body>
 <script src="./Html_CSS/DOANMON/JAVAS/java.js"></script>
+<script src="./Html_CSS/DOANMON/JAVAS/danhmuc.js"></script>
 </html>
