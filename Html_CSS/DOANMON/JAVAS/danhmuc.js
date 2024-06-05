@@ -1,3 +1,4 @@
+document.querySelector("#btright").onclick = () => location.href = "./cart.html";
 // danhmuc.js------>
  const items = document.querySelectorAll(".danhmuc-left-li")
  items.forEach(function(menu,index) {
@@ -5,19 +6,20 @@
         menu.classList.toggle("block")
     })
  })
-// cart-modal------>
- const openmodalclick = document.querySelector(".sub-cart")
- const iconclose = document.querySelector(".cart-modal-head .cart-close")
- const modal = document.querySelector(".cart-modal")
+ document.querySelector(".cart-content-right-button button").onclick = () => location.href = "./delivery.html";
+// // cart-modal------>
+//  const openmodalclick = document.querySelector(".sub-cart")
+//  const iconclose = document.querySelector(".cart-modal-head .cart-close")
+//  const modal = document.querySelector(".cart-modal")
 
-function togglemodal(a) {
-    modal.classList.toggle("hidden")
-}
+// function togglemodal(a) {
+//     modal.classList.toggle("hidden")
+// }
 
- openmodalclick.addEventListener("click",togglemodal)
- iconclose.addEventListener("click",togglemodal)
- modal.addEventListener("click",function (a) {
-        if (a.target === a.currentTarget) {
-            togglemodal()
-        }
- })
+//  openmodalclick.addEventListener("click",togglemodal)
+//  iconclose.addEventListener("click",togglemodal)
+//  modal.addEventListener("click",function (a) {
+//         if (a.target === a.currentTarget) {
+//             togglemodal()
+//         }
+//  })

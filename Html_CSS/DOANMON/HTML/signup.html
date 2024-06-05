@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/b8d12a5188.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../CSS/form.css">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>FAHASA</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="/index.html"><img src="../IMAGE/fahasa-logo.png" alt=""></a>
+        </div>
+        <div class="menu">
+            <li><a href="">Đồ Chơi</a>
+                <ul class="sub-menu">
+                    <li><a href="../HTML/danhmuc.html">
+                        ĐỒ CHƠI NỔI BẬT
+                    </a></li>
+                    <li><a href="">PHƯƠNG TIỆN CÁC LOẠI</a></li>
+                    <li><a href="">MÔ HÌNH</a>
+                    </li>
+                    <li><a href="">ROBOT-SIÊU NHÂN</a>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="">Văn học</a>
+                <ul class="sub-menu">
+                    <li><a href="../HTML/danhmuc.html">
+                        TIỂU THUYẾT
+                    </a></li>
+                    <li><a href="">TRUYỆN NGẮN</a></li>
+                    <li><a href="">TÁC PHẨM KINH ĐIỂN</a>
+                    </li>
+                    <li><a href="">LIGHT NOVEL</a>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="">Sách</a></li>
+            <li><a href="">Manga</a></li>
+            <li><a href="">Văn phòng phẩm nổi bật</a></li>
+            <li><a href="">Sale</a></li>
+        </div>
+         <div class="other">
+            <li><input placeholder="Tìm kiếm" type="text"><i class="fa-solid fa-magnifying-glass"></i></li>
+            <li><a href="" class="fa fa-paw"></a></li>
+            <li class="sign-in"><a href="../HTML/user.html" class="fa fa-user"></a>
+                <div class="sub-sign-in">
+                   <div>
+                    <a href="../HTML/signin.html"><button  id="btsign-in" type="button">Đăng nhập</button></a>
+                   </div>
+                   <div>
+                    <a href="../HTML/signup.html"><button id="btsign-up" type="button">Đăng ký</button></a>
+                   </div>
+                   <div>
+                    <a href=""><button id="btsign-in-fb" type="button">Đăng nhập bằng Facebook</button></a>
+                   </div>   
+                </div>
+            </li>
+            <li class="menu-cart"><i class="fa fa-shopping-bag"></i>
+                <div class="sub-cart" style="left: -186px; cursor: pointer;">
+                    <div class="sub-cart-top flex">
+                        <i class='bx bx-cart-alt'></i>
+                        <p><span style="padding: 4px;">Giỏ hàng</span><span style="font-weight: 500;padding: 4px;">(0)</span></p>
+                    </div>
+                    <div class="sub-cart-bottom">
+                        <div class="cart-center" style="padding: 16px;">
+                            <img src="https://cdn0.fahasa.com/skin//frontend/ma_vanese/fahasa/images/checkout_cart/ico_emptycart.svg" alt="">
+                        </div>
+                        <div class="cart-center" style="padding: 0 0 24px">
+                            Chưa có sản phẩm nào
+                        </div>
+                    </div>
+                </div>
+            </li>
+         </div>
+    </header>
+    <div class="cart-modal ">
+        <div class="cart-modal-inner">
+            <div class="cart-modal-head flex">
+                <p>
+                    <span ><i class='bx bx-cart-alt'></i></span>
+                    <span style="padding: 4px;">Giỏ hàng</span><span style="font-weight: 500;padding: 4px;">(0)</span>
+                </p>
+                <p class="cart-close" style="font-size: 32px; cursor: pointer;"><i class='bx bx-x'></i></p>
+            </div>
+            <div class="cart-modal-body">
+                <div class="cart-modal-center" style="width: 100%; height:250px; padding: 16px; z-index: -1; overflow-y: scroll; ">
+                 
+                </div>
+                
+            </div>
+            <div class="cart-modal-thanhtoan">
+                
+                <a href="../../DOANMON/HTML/cart.html"> <button class="btn-3" id="btthanhtoan" type="button" >Thanh Toán</button></a>
+                
+            </div>
+        </div>
+    </div>   
+    <!------------------------danhmuc--------------------------------->
+
+    <form  action="./signin.html" onsubmit="validation(this); return false" class=" form form_sign form_up">
+        <div class="form_contain--main" >
+            
+            <main class="main_form--up">
+                <h1 style="margin-bottom: 20px;"> <span>Sign Up</span></h1>
+                
+                <div class="form_input">
+                    <label for  >Email<sup style="color: red;padding: 2px;">*</sup></label>
+                    <input id="input_email" name="email" placeholder=" Email" type="email">
+                    <span title="email"></span>
+                    <p id="errorEmail" ></p>
+                </div>
+                
+                <div class="form_input">
+                    <label for="">Tên đăng nhập <sup style="color: red;padding: 2px;">*</sup></label>
+                    <input id="input_user" placeholder="Tên đăng nhập" name="name" type="text">
+                    <span title="userName"></span>
+                    <p id="errorUsername" ></p>
+                </div>
+                <div class="form_input">
+                    <label for="">Mật khẩu <sup style="color: red;padding: 2px;">*</sup></label>
+                    <input  id="input_pass" name="password" placeholder=" Nhập mật khẩu" type="password">
+                    <span title="password"></span>
+                    <p id="errorPass" ></p>
+                </div>
+                <div class="form_input">
+                    <label for="">Nhập lại mật khẩu<sup style="color: red;padding: 2px;">*</sup></label>
+                    <input id="input_repass" placeholder="Nhập mật khẩu" type="password" name="repassword">
+                    <span title="confirmPassword"></span>
+                    <p id="errorRePass" ></p>
+                </div>
+                <div  class="form_submit">
+                    <input id="submit" type="submit" value="Đăng Ký">
+                </div>
+            </main>
+            <footer>
+                 Đã có tài khoản?<a href="../HTML/signin.html" style="font-size: 14px; color: blue;">ĐĂNG NHẬP NGAY</a>
+            </footer>
+        </div>
+    </div>
+
+    <!------------------------App-container--------------------------------->
+    
+</body>
+<script src="../JAVAS/form.js"></script>
+<!-- <script src="../JAVAS/cart.js"></script> -->
+<!-- <script src="../JAVAS/java.js"></script> -->
+<!-- <script src="../JAVAS/danhmuc.js" ></script> -->
+</html>

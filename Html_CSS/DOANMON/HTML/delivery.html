@@ -49,20 +49,20 @@
          <div class="other">
             <li><input placeholder="Tìm kiếm" type="text"><i class="fa-solid fa-magnifying-glass"></i></li>
             <li><a href="" class="fa fa-paw"></a></li>
-            <li class="sign-in"><a href="" class="fa fa-user"></a>
+            <li class="sign-in"><a href="../HTML/user.html" class="fa fa-user"></a>
                 <div class="sub-sign-in">
                    <div>
-                    <a href=""><button id="btsign-in" type="button">Đăng nhập</button></a>
+                    <a href="../HTML/signin.html"><button  id="btsign-in" type="button">Đăng nhập</button></a>
                    </div>
                    <div>
-                    <a href=""><button id="btsign-up" type="button">Đăng ký</button></a>
+                    <a href="../HTML/signup.html"><button id="btsign-up" type="button">Đăng ký</button></a>
                    </div>
                    <div>
                     <a href=""><button id="btsign-in-fb" type="button">Đăng nhập bằng Facebook</button></a>
                    </div>   
                 </div>
             </li>
-            <li class="menu-cart"><a href="../HTML/cart.html" class="fa fa-shopping-bag"></a>
+            <li class="menu-cart"><i class="fa fa-shopping-bag"></i>
                 <div class="sub-cart" style="left: -186px; cursor: pointer;">
                     <div class="sub-cart-top flex">
                         <i class='bx bx-cart-alt'></i>
@@ -80,22 +80,28 @@
             </li>
          </div>
     </header>
-    <div class="cart-modal hidden">
+    <div class="cart-modal ">
         <div class="cart-modal-inner">
             <div class="cart-modal-head flex">
                 <p>
-                    <span><i class='bx bx-cart-alt'></i></span>
+                    <span ><i class='bx bx-cart-alt'></i></span>
                     <span style="padding: 4px;">Giỏ hàng</span><span style="font-weight: 500;padding: 4px;">(0)</span>
                 </p>
                 <p class="cart-close" style="font-size: 32px; cursor: pointer;"><i class='bx bx-x'></i></p>
             </div>
             <div class="cart-modal-body">
-                <div class="cart-modal-center" style="padding: 16px; z-index: -1; margin: 80px 0;">
-                    <img  src="https://cdn0.fahasa.com/skin//frontend/ma_vanese/fahasa/images/checkout_cart/ico_emptycart.svg" alt="">
+                <div class="cart-modal-center" style="width: 100%; height:250px; padding: 16px; z-index: -1; overflow-y: scroll; ">
+                 
                 </div>
+                
+            </div>
+            <div class="cart-modal-thanhtoan">
+                
+                <a href="../../DOANMON/HTML/cart.html"> <button class="btn-3" id="btthanhtoan" type="button" >Thanh Toán</button></a>
+                
             </div>
         </div>
-    </div>
+    </div>   
 <!------------------------Delivery--------------------------------->
 <section class="delivery">
     <div class="container">
@@ -109,21 +115,40 @@
         </div>
         <hr>
         <div class="delivery-content-main">
-            <div class="delivery-main">
-                <label for="">Họ và tên người nhận</label>
-                <input type="text" placeholder="Nhập họ tên người nhận">
+            <div class="delivery-content">
+                <div class="delivery-main">
+                    <label for="">Họ và tên người nhận</label>
+                    <div class="delivery-main-input">
+                        <input id="hoten" type="text" placeholder="Nhập họ tên người nhận" required>
+                        <div class="erro-ten erro-text" style="text-align: left;font-size: 14px;padding: 4px 0;">
+                            <h3>*Thông tin không được để trống!</h3>
+                       </div>
+                    </div>
+                </div>
+                
             </div>
             <div class="delivery-main">
                 <label for="">Email</label>
-                <input type="text" placeholder="Nhập email">
+                <div class="delivery-main-input">
+                    <input id="email" type="text" placeholder="Nhập email" required>
+                    <div class="erro-email erro-text" style="text-align: left;font-size: 14px;padding: 4px 0;">
+                        <h3>*Thông tin không được để trống!</h3>
+                   </div>
+                </div>
+                
             </div>
             <div class="delivery-main">
                 <label for="">Số điện thoại</label>
-                <input type="text" placeholder="Ví dụ: 0979123xxx (10 ký tự số)">
+                <div class="delivery-main-input">
+                    <input id="sdt" type="text" placeholder="Ví dụ: 0979123xxx (10 ký tự số)" required>
+                    <div class="erro-sdt erro-text" style="text-align: left;font-size: 14px;padding: 4px 0;">
+                        <h3>*Thông tin không được để trống!</h3>
+                   </div>
+                </div>
             </div>
             <div class="delivery-main">
                 <label for="">Quốc gia</label>
-                <select name="" id="">
+                <select name="" id="" required>
                     <option value="" data-select2-id="15"> </option>
                     <option value="AU" data-select2-id="16">Australia</option>
                     <option value="BR" data-select2-id="17">Brazil</option>
@@ -188,7 +213,12 @@
             </div>
             <div class="delivery-main">
                 <label for="">Địa chỉ nhận hàng</label>
-                <input type="text" placeholder="Nhập địa chỉ nhận hàng">
+                <div class="delivery-main-input">
+                    <input id="diachi" type="text" placeholder="Nhập địa chỉ nhận hàng" required>
+                    <div class="erro-diachi erro-text" style="text-align: left;font-size: 14px;padding: 8px 0;color: #c00;">
+                        <h3>*Thông tin không được để trống!</h3>
+                   </div>
+                </div>
             </div>
         </div>
         <div class="delivery-vanchuyen container-gioithieu-fahasha">
@@ -421,6 +451,7 @@
    <img src="../IMAGE/fahasa-logo.png" alt="">
 </div>
 </body>
-<script src="../JAVAS/java.js"></script>
-<script src="../JAVAS/danhmuc.js" ></script>
+<!-- <script src="../JAVAS/java.js"></script> -->
+<!-- <script src="../JAVAS/danhmuc.js" ></script> -->
+<script src="../JAVAS/delivery.js"></script>
 </html>

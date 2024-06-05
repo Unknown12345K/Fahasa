@@ -49,20 +49,20 @@
          <div class="other">
             <li><input placeholder="Tìm kiếm" type="text"><i class="fa-solid fa-magnifying-glass"></i></li>
             <li><a href="" class="fa fa-paw"></a></li>
-            <li class="sign-in"><a href="" class="fa fa-user"></a>
+            <li class="sign-in"><a href="../HTML/user.html" class="fa fa-user"></a>
                 <div class="sub-sign-in">
                    <div>
-                    <a href=""><button id="btsign-in" type="button">Đăng nhập</button></a>
+                    <a href="../HTML/signin.html"><button  id="btsign-in" type="button">Đăng nhập</button></a>
                    </div>
                    <div>
-                    <a href=""><button id="btsign-up" type="button">Đăng ký</button></a>
+                    <a href="../HTML/signup.html"><button id="btsign-up" type="button">Đăng ký</button></a>
                    </div>
                    <div>
                     <a href=""><button id="btsign-in-fb" type="button">Đăng nhập bằng Facebook</button></a>
                    </div>   
                 </div>
             </li>
-            <li class="menu-cart"><a href="../HTML/cart.html" class="fa fa-shopping-bag"></a>
+            <li class="menu-cart"><i class="fa fa-shopping-bag"></i>
                 <div class="sub-cart" style="left: -186px; cursor: pointer;">
                     <div class="sub-cart-top flex">
                         <i class='bx bx-cart-alt'></i>
@@ -80,19 +80,25 @@
             </li>
          </div>
     </header>
-    <div class="cart-modal hidden">
+    <div class="cart-modal ">
         <div class="cart-modal-inner">
             <div class="cart-modal-head flex">
                 <p>
-                    <span><i class='bx bx-cart-alt'></i></span>
+                    <span ><i class='bx bx-cart-alt'></i></span>
                     <span style="padding: 4px;">Giỏ hàng</span><span style="font-weight: 500;padding: 4px;">(0)</span>
                 </p>
                 <p class="cart-close" style="font-size: 32px; cursor: pointer;"><i class='bx bx-x'></i></p>
             </div>
             <div class="cart-modal-body">
-                <div class="cart-modal-center" style="padding: 16px; z-index: -1; margin: 80px 0;">
-                    <img  src="https://cdn0.fahasa.com/skin//frontend/ma_vanese/fahasa/images/checkout_cart/ico_emptycart.svg" alt="">
+                <div class="cart-modal-center" style="width: 100%; height:250px; padding: 16px; z-index: -1; overflow-y: scroll; ">
+                 
                 </div>
+                
+            </div>
+            <div class="cart-modal-thanhtoan">
+                
+                <a href="../../DOANMON/HTML/cart.html"> <button class="btn-3" id="btthanhtoan" type="button" >Thanh Toán</button></a>
+                
             </div>
         </div>
     </div>   
@@ -163,7 +169,9 @@
                                 <h1>Lớp học Mật Ngữ: Cuộc đua sao chổi</h1>
                             </a>
                            <p style="display: flex; justify-content:space-evenly">
-                            <span>459.000<sup>Đ</sup> </span>
+                            <span>
+                                <span class="price">459.000</span><sup>Đ</sup> 
+                            </span>
                             <span id="danhmuc-cart" style="padding: 8px; cursor: pointer; color: #c00; font-size: large; font-weight: 700;"><i class='bx bx-cart-alt'></i></span>
                         </p>      
                         </div>
@@ -173,7 +181,9 @@
                                 <h1>Lớp Học Mật Ngữ - Siêu Thú Ngân Hà</h1>
                              </a>
                             <p style="display: flex; justify-content:space-evenly">
-                                <span>699.000<sup>Đ</sup> </span>
+                                <span>
+                                    <span class="price">699.000</span><sup>Đ</sup> 
+                                </span>
                                 <span id="danhmuc-cart" style="padding: 8px; cursor: pointer; color: #c00; font-size: large; font-weight: 700;"><i class='bx bx-cart-alt'></i></span>
                             </p>      
                          </div>
@@ -183,7 +193,9 @@
                                 <h1>Boardgame Lớp Học Mật Ngữ - Khu Rừng Kim Cương</h1>
                             </a>
                             <p style="display: flex; justify-content:space-evenly">
-                                <span>479.200<sup>Đ</sup> </span>
+                                <span>
+                                    <span class="price">479.200</span><sup>Đ</sup> 
+                                </span>
                                 <span id="danhmuc-cart" style="padding: 8px; cursor: pointer; color: #c00; font-size: large; font-weight: 700;"><i class='bx bx-cart-alt'></i></span>
                             </p>      
                          </div>
@@ -194,7 +206,9 @@
                                 <h1>Boardgame Ting Ting Doraemon</h1>
                             </a>
                             <p style="display: flex; justify-content:space-evenly">
-                                <span>300.000<sup>Đ</sup> </span>
+                                <span>
+                                    <span class="price">300.000</span><sup>Đ</sup> 
+                                </span>
                                 <span id="danhmuc-cart" style="padding: 8px; cursor: pointer; color: #c00; font-size: large; font-weight: 700;"><i class='bx bx-cart-alt'></i></span>
                             </p>      
                          </div>
@@ -204,7 +218,9 @@
                                 <h1>Boardgame Mèo Mốc Style Up! - The Photo Taking Game - Play Plus</h1>
                             </a>
                             <p style="display: flex; justify-content:space-evenly">
-                                <span>169.150<sup>Đ</sup> </span>
+                                <span>
+                                    <span class="price">169.150</span><sup>Đ</sup> 
+                                </span>
                                 <span id="danhmuc-cart" style="padding: 8px; cursor: pointer; color: #c00; font-size: large; font-weight: 700;"><i class='bx bx-cart-alt'></i></span>
                             </p>      
                          </div>
@@ -214,7 +230,9 @@
                                 <h1>Thẻ Bài Ma Sói Character Việt Hóa</h1>
                             </a>
                             <p style="display: flex; justify-content:space-evenly">
-                                <span>112.000<sup>Đ</sup> </span>
+                                <span>
+                                    <span class="price">112.000</span><sup>Đ</sup> 
+                                </span>
                                 <span id="danhmuc-cart" style="padding: 8px; cursor: pointer; color: #c00; font-size: large; font-weight: 700;"><i class='bx bx-cart-alt'></i></span>
                             </p>      
                          </div>
@@ -224,7 +242,9 @@
                                 <h1>Đồ Chơi Cờ Trí Tuệ UNO W2085</h1>
                             </a>
                             <p style="display: flex; justify-content:space-evenly">
-                                <span>126.750<sup>Đ</sup> </span>
+                                <span>
+                                    <span class="price">126.750</span><sup>Đ</sup> 
+                                </span>
                                 <span id="danhmuc-cart" style="padding: 8px; cursor: pointer; color: #c00; font-size: large; font-weight: 700;"><i class='bx bx-cart-alt'></i></span>
                             </p>   
                          </div>
@@ -234,7 +254,9 @@
                                 <h1>Boardgame Lớp Học Mật Ngữ - Ú Òa - Ai Vậy Ta? - Board Game VN</h1>
                             </a>
                             <p style="display: flex; justify-content:space-evenly">
-                                <span>220.000<sup>Đ</sup> </span>
+                                <span>
+                                    <span class="price">220.000</span><sup>Đ</sup> 
+                                </span>
                                 <span id="danhmuc-cart" style="padding: 8px; cursor: pointer; color: #c00; font-size: large; font-weight: 700;"><i class='bx bx-cart-alt'></i></span>
                             </p>      
                          </div>
@@ -283,6 +305,7 @@
        <img src="../IMAGE/fahasa-logo.png" alt="">
     </div>
 </body>
-<script src="../JAVAS/java.js"></script>
+<script src="../JAVAS/cart.js"></script>
+<!-- <script src="../JAVAS/java.js"></script> -->
 <script src="../JAVAS/danhmuc.js" ></script>
 </html>

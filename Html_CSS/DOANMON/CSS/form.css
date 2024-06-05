@@ -1,0 +1,182 @@
+body::-webkit-scrollbar{
+    width: 1px;
+}
+main 
+{
+    position: relative;
+}
+.message-error {
+    font-size: 13px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #C92127;
+    margin: 0rem 1rem;
+}
+.form_sign{
+    width: 600px;
+    height: 640px;
+    background-color: white;
+    border-radius: 20px;
+    top: 10px;
+    padding: 50px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+.form_contain--main{
+    background-color: rgb(255, 255, 255);
+    height: 90%;
+    width: 90%;
+    padding: 50px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+body{
+     background-color: rgb(176, 175, 175);
+     height: 800px;
+     align-items: center;
+     display: flex;
+}
+header{
+    color: var(--logoColor);
+    /* font-size: 40px; */
+    display: flex;
+    justify-content: center;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+footer{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 12px;
+}
+footer a{
+    font-family: sans-serif;
+    text-decoration: none;
+    color: var(--logoColor);
+}
+
+footer a:hover{
+    color:  rgb(22, 60, 250);
+}
+.form_input{
+    height: 80px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.form_input label{
+    font-size: 15px;
+    font-weight: 900;
+}
+
+.form_input input{
+    margin-top: 4px;
+    font-family: sans-serif;
+    font-weight: 300;
+    height: 35px;
+    padding: 5px;
+    outline: none;
+    opacity: 0.6;
+    border-radius: 5px;
+    border: 2px solid #333;
+}
+.form_input input:hover{
+    border: 2px solid rgb(0, 186, 254);
+}
+
+
+.form_input span{
+    color: #333;
+    font-size: 11px;
+    font-weight: 100;
+    height: 10px;
+    font-family:  sans-serif;
+    position: relative;
+    bottom: -10px;
+}
+#btsign-in-fb {
+    color: #fff;
+    cursor: pointer;
+    background-color: #1478FC;
+    border: 2px solid #1478FC;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 8px 10px;
+    border: none;
+    border-radius: 8px;
+}
+.form_submit{
+    display: flex;
+    justify-content: center;
+    margin: 4px 0;
+}
+
+
+.form_submit input{
+    cursor: pointer;
+    background-color: var(--logoColor);
+    color: white;
+    width: 50%; 
+    background-color: #C92127;
+    padding: 0 20px;
+    padding: 8px 10px;
+    border: none;
+    border-radius: 8px;
+}
+
+.form_submit input:active{
+    opacity: 0.7;
+}
+
+.form_up{
+    height: 650px;
+}
+/* .main_form--up{
+    height: 85%;
+} */
+
+.user-form{
+    width: 600px;
+    height: 640px;
+    background-color: white;
+    border-radius: 20px;
+    top: 10px;
+    padding: 50px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+.row {
+    padding: 16px 0;
+    color: rgb(208, 4, 4);
+}
+.row label {
+    font-weight: 700;
+}
+.row label i {
+    padding-right: 4px;
+    
+}
+.row input {
+    padding: 0 16px;
+    opacity: 0.6;
+    border: none;
+    border-bottom: 0.5px solid #333;
+    outline: none;
+}

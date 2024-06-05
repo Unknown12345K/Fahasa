@@ -50,20 +50,20 @@
          <div class="other">
             <li><input placeholder="Tìm kiếm" type="text"><i class="fa-solid fa-magnifying-glass"></i></li>
             <li><a href="" class="fa fa-paw"></a></li>
-            <li class="sign-in"><a href="" class="fa fa-user"></a>
+            <li class="sign-in"><a href="./Html_CSS/DOANMON/HTML/user.html" class="fa fa-user"></a>
                 <div class="sub-sign-in">
                    <div>
-                    <a href=""><button id="btsign-in" type="button">Đăng nhập</button></a>
+                    <a href="./Html_CSS/DOANMON/HTML/signin.html"><button  id="btsign-in" type="button">Đăng nhập</button></a>
                    </div>
                    <div>
-                    <a href=""><button id="btsign-up" type="button">Đăng ký</button></a>
+                    <a href="./Html_CSS/DOANMON/HTML/signup.html"><button id="btsign-up" type="button">Đăng ký</button></a>
                    </div>
                    <div>
                     <a href=""><button id="btsign-in-fb" type="button">Đăng nhập bằng Facebook</button></a>
                    </div>   
                 </div>
             </li>
-            <li class="menu-cart"><a href="./Html_CSS/DOANMON/HTML/cart.html" class="fa fa-shopping-bag"></a>
+            <li class="menu-cart"><i class="fa fa-shopping-bag"></i>
                 <div class="sub-cart" style="left: -186px; cursor: pointer;">
                     <div class="sub-cart-top flex">
                         <i class='bx bx-cart-alt'></i>
@@ -81,22 +81,28 @@
             </li>
          </div>
     </header>
-    <div class="cart-modal hidden">
+    <div class="cart-modal ">
         <div class="cart-modal-inner">
             <div class="cart-modal-head flex">
                 <p>
-                    <span><i class='bx bx-cart-alt'></i></span>
+                    <span ><i class='bx bx-cart-alt'></i></span>
                     <span style="padding: 4px;">Giỏ hàng</span><span style="font-weight: 500;padding: 4px;">(0)</span>
                 </p>
                 <p class="cart-close" style="font-size: 32px; cursor: pointer;"><i class='bx bx-x'></i></p>
             </div>
             <div class="cart-modal-body">
-                <div class="cart-modal-center" style="padding: 16px; z-index: -1; margin: 80px 0;">
-                    <img  src="https://cdn0.fahasa.com/skin//frontend/ma_vanese/fahasa/images/checkout_cart/ico_emptycart.svg" alt="">
+                <div class="cart-modal-center" style="width: 100%; height:250px; padding: 16px; z-index: -1; overflow-y: scroll; ">
+                 
                 </div>
+                
+            </div>
+            <div class="cart-modal-thanhtoan">
+                
+                   <a href="./Html_CSS/DOANMON/HTML/cart.html"> <button class="btn-3" id="btthanhtoan" type="button" >Thanh Toán</button></a>
+                
             </div>
         </div>
-    </div>
+    </div>   
     <!------------------------Slider--------------------------------->
     <section id="Slider">
         <div class="aspect-ratio-169">
@@ -147,5 +153,6 @@
     </div>
 </body>
 <script src="./Html_CSS/DOANMON/JAVAS/java.js"></script>
+<script src="./Html_CSS/DOANMON/JAVAS/cart.js"></script>
 <script src="./Html_CSS/DOANMON/JAVAS/danhmuc.js"></script>
 </html>
