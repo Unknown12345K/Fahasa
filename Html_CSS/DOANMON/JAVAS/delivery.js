@@ -44,7 +44,7 @@ var btclick =document.querySelector('#bt-thanhtoan')
             err.style.display = "none"
         }
     }
-    // else {
-    //     location=location;
-    // }
+    else {
+        location=alert("Thanh Toán Thành Công");
+    }
 }

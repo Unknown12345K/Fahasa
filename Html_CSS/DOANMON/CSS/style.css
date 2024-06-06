@@ -91,7 +91,6 @@ header:hover {
     padding: 20px ;
     border-radius: 8px;
     cursor: pointer;
-    transition: 0.3s;
 }
 #btsign-in {
     color: #fff;
@@ -140,13 +139,13 @@ header:hover {
     text-align: center;
 }
 .sub-sign-in,.sub-cart {
+    transition: 0.5s;
     top: 20px;
     left: -150px;
     width: 260px;
     margin-right: 20px;
     visibility: hidden;
     position: absolute;
-    transition: 0.3s;
     box-shadow: 0 4px 6px rgb(32 33 36 / 28%);
     color: #7A7E7F;
     background-color:#fff;

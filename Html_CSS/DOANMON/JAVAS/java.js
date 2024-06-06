@@ -7,12 +7,7 @@
        else {
         header.classList.remove("scrollY")
        }
-    //    console.log(x)
     })
-
-
-
-
 
     const imgPosition = document.querySelectorAll(".aspect-ratio-169 img")
     const imgContainer = document.querySelector(".aspect-ratio-169")
@@ -39,4 +34,4 @@
         dotActive.classList.remove("active")
         dotitem[index].classList.add("active")
     }
-    setInterval(imgSlider,5000)
+    setInterval(imgSlider,3000)
