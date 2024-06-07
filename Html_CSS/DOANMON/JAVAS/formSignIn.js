@@ -2,9 +2,7 @@
 const checkUsername = (username)=>{
     if (username.length == 0) {
         return "*Hãy nhập Tên! "
-    }
-    
-    
+    }  
    
 };
 const checkPass = (pass)=>{

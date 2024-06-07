@@ -44,7 +44,7 @@ const hideError = (element)=> {
 
 var form = document.querySelector(".form_up")
 
-  var btnSubmit =  document.querySelector("#submit");
+var btnSubmit =  document.querySelector("#submit");
   console.log(form)
   btnSubmit.onclick = (btn)=>{
     // console.log(messageErrorEmail)
@@ -52,12 +52,12 @@ var form = document.querySelector(".form_up")
     let pass =  form.password.value;
     let repass = form.repassword.value;
     let email = form.email.value;
-    let messageErrorEmail  = checkEmail(email);
     const ErrorEmail = document.getElementById("errorEmail")
     const ErrorUsername = document.getElementById("errorUsername")
     const ErrorPass = document.getElementById("errorPass")
     const ErrorRePass = document.getElementById("errorRePass")
     
+    let messageErrorEmail  = checkEmail(email);
     console.log(messageErrorEmail)
     if (typeof messageErrorEmail ==="string") {
       btn.preventDefault();
